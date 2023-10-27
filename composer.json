@@ -1,0 +1,25 @@
+{
+    "name": "grilar/menu",
+    "description": "Menu package",
+    "type": "package",
+	"license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Grilar\\Menu\\": "src"
+        }
+    },
+    "require": {
+        "grilar/platform": "*@dev",
+        "grilar/theme": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Grilar\\Menu\\Providers\\MenuServiceProvider"
+            ],
+            "aliases": {
+                "Menu": "Grilar\\Menu\\Facades\\Menu"
+            }
+        }
+    }
+}
